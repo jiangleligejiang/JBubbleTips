@@ -1,0 +1,16 @@
+PODS:
+  - JBubbleTips (0.1.0)
+
+DEPENDENCIES:
+  - JBubbleTips (from `../`)
+
+EXTERNAL SOURCES:
+  JBubbleTips:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JBubbleTips: ebfddaf8bd8c46411e2228c33bff994a23733777
+
+PODFILE CHECKSUM: 631293c1623dd6f984bac3b9a41b4cb423cee747
+
+COCOAPODS: 1.6.1
