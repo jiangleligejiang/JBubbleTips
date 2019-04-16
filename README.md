@@ -20,10 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'JBubbleTips'
 ```
 
-## Author
-
-15012426009@163.com, liuqiang04@corp.netease.com
-
 ## License
 
 JBubbleTips is available under the MIT license. See the LICENSE file for more info.
