@@ -67,15 +67,15 @@
 }
 
 - (void)didTargetViewPressed:(UIButton *)button {
-//    [_leftTips showPointAtView:_targetView inView:self.testTextView animated:YES];
-//    [_rightTips showPointAtView:_targetView animated:YES];
-//    [_upTips showPointAtPosition:CGPointMake(self.testTextView.bounds.size.width / 2, 300) inView:self.testTextView animated:YES];
-//    [_downTips showPointAtPosition:CGPointMake(self.testTextView.bounds.size.width / 2, 200) animated:NO];
+    [_leftTips showPointAtView:_targetView inView:self.testTextView animated:YES];
+    [_rightTips showPointAtView:_targetView animated:YES];
+    [_upTips showPointAtPosition:CGPointMake(self.testTextView.bounds.size.width / 2, 300) inView:self.testTextView animated:YES];
+    [_downTips showPointAtPosition:CGPointMake(self.testTextView.bounds.size.width / 2, 200) animated:NO];
     
-        [_leftTips pointAtView:_targetView inView:self.view];
-        [_rightTips pointAtView:_targetView inView:self.view];
-        [_upTips pointAtPosition:CGPointMake(self.view.bounds.size.width / 2, 300) inView:self.view];
-        [_downTips pointAtView:_targetView inView:self.view];
+//        [_leftTips pointAtView:_targetView inView:self.view];
+//        [_rightTips pointAtView:_targetView inView:self.view];
+//        [_upTips pointAtPosition:CGPointMake(self.view.bounds.size.width / 2, 300) inView:self.view];
+//        [_downTips pointAtView:_targetView inView:self.view];
 }
 
 - (void)testCustomView {
@@ -124,6 +124,7 @@
 
 - (void)didCustomTargetViewPressed:(UIButton *)button {
     [_customTips showPointAtView:button inView:self.containerView animated:YES];
+    [_customTips autoDismissAnimated:YES timeInterval:5.0];
 }
 
 - (NSAttributedString *)generateSimpleAttributedString {

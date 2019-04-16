@@ -122,13 +122,23 @@
 }
 
 #pragma mark - UITextViewDelegate
-- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction {
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction  API_AVAILABLE(ios(10.0)){
     if (self.delegate && [self.delegate respondsToSelector:@selector(bubbleTips:didClickInRange:url:)]) {
         [self.delegate bubbleTips:self didClickInRange:characterRange url:URL];
         return NO;
     }
     return YES;
 }
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(bubbleTips:didClickInRange:url:)]) {
+        [self.delegate bubbleTips:self didClickInRange:characterRange url:URL];
+        return NO;
+    }
+    return YES;
+}
+
 
 #pragma mark - setter
 - (void)setText:(NSString *)text {
