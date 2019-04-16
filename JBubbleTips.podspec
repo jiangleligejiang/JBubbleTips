@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JBubbleTips'
-  s.version          = '0.1.1'
+  s.version          = '1.0.0'
   s.summary          = 'A subClass on UIView that provides show and hide like bubble'
 
 # This description is used to generate tags and improve search results.
