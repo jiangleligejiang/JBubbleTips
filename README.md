@@ -6,13 +6,11 @@
 [![Platform](https://img.shields.io/cocoapods/p/JBubbleTips.svg?style=flat)](https://cocoapods.org/pods/JBubbleTips)
 
 ## 介绍
----
 JBubbleTips:通用的气泡提示控件。
 
 ![](https://user-gold-cdn.xitu.io/2019/4/16/16a23fc825e414ad?w=308&h=522&f=gif&s=34930)
 
 ## 特性
----
 - 支持箭头指向四个方向。
 - 支持自适应指向对应的targetView或targetPoint。
 - 支持文本或富文本的显示。
@@ -21,7 +19,6 @@ JBubbleTips:通用的气泡提示控件。
 - 支持点击消失或定时消失效果。
 
 ## 用法
----
 ### 指向view且静态显示文本
 ```objc
 JBubbleTips *leftTips = [[JBubbleTips alloc] initWithText:@"这是箭头指向左边的气泡提示视图这是箭头指向左边的气泡提示视图" direction:JBubbleTipsDirectionLeft];
@@ -51,7 +48,6 @@ customTips.bubbleColor = [UIColor lightGrayColor];
 ```
 
 ## 相关接口
----
 JBubbleTips.h
 ```objc
 - (instancetype)initWithText:(NSString *)text direction:(JBubbleTipsDirection)direction;
@@ -84,7 +80,6 @@ JBubbleTips+Action.h
 - (void)autoDismissAnimated:(BOOL)animated timeInterval:(NSTimeInterval)timeInterval;
 ```
 ## 安装
----
 ### CocoaPod
 1. 在PodFile文件中添加```pod "JBubbleTips"```。
 2. 执行```pod install```或```pod update```。
