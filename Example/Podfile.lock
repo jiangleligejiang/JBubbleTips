@@ -1,16 +1,23 @@
 PODS:
   - JBubbleTips (0.1.0)
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
   - JBubbleTips (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
 
 EXTERNAL SOURCES:
   JBubbleTips:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JBubbleTips: ebfddaf8bd8c46411e2228c33bff994a23733777
+  JBubbleTips: 07c7a50842c1eeccd88bc2094aed2a968dd39703
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 631293c1623dd6f984bac3b9a41b4cb423cee747
+PODFILE CHECKSUM: 7473be55820d3ef76746eca4df40b4c7d0680638
 
 COCOAPODS: 1.6.1

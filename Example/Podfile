@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'JBubbleTips_Example' do
   pod 'JBubbleTips', :path => '../'
+  pod 'Masonry'
 
   target 'JBubbleTips_Tests' do
     inherit! :search_paths
